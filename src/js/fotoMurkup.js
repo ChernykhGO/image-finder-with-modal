@@ -20,6 +20,7 @@ refs.loadMoreBtn.addEventListener('click', onLoadMore);
 refs.loadMoreBtn.style.display = 'none';
 refs.backOnTop.style.display = 'none';
 
+// import scroll from '/scroll'
 
 // .............................................................................открывается большое изображение
 import onLightboxOpen from './lightBox';
@@ -54,10 +55,10 @@ if (newsApiService.query === '' || !newsApiService.query.trim()) {
         }
     clearHitsContainer();
     appendHitsMarkup(hits);
-    success({
-        title: 'Success!',
-        text: 'That thing that you were trying to do worked.'
-      });
+    // success({
+    //     title: 'Success!',
+    //     text: 'That thing that you were trying to do worked.'
+    //   });
   });
 };
 
@@ -87,6 +88,9 @@ function scrollMore() {
 function clearHitsContainer() {
     refs.cardContainer.innerHTML= '';
 }
+
+
+
 
 
 
