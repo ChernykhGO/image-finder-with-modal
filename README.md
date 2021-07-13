@@ -1,1 +1,0 @@
-# image-finder-with-modal
