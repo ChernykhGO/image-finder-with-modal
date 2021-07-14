@@ -20,13 +20,9 @@ refs.loadMoreBtn.addEventListener('click', onLoadMore);
 refs.loadMoreBtn.style.display = 'none';
 refs.backOnTop.style.display = 'none';
 
-// import scroll from '/scroll'
-
 // .............................................................................открывается большое изображение
 import onLightboxOpen from './lightBox';
 refs.cardContainer.addEventListener('click', onLightboxOpen);
-
-
 
 function onSearch(e) {
     e.preventDefault();
